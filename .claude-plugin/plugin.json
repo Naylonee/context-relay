@@ -1,0 +1,10 @@
+{
+  "name": "context-relay",
+  "version": "1.6.0",
+  "description": "Never lose work to a full context: at 400k tokens (configurable), Claude Code writes a handoff and continues in a new session, while the old conversation stays intact.",
+  "author": { "name": "Naylonee", "url": "https://github.com/Naylonee" },
+  "homepage": "https://github.com/Naylonee/context-relay",
+  "repository": "https://github.com/Naylonee/context-relay",
+  "license": "MIT",
+  "keywords": ["context", "context-window", "handoff", "session", "tokens", "compact", "hooks", "productivity"]
+}
