@@ -1,6 +1,7 @@
 {
   "name": "context-relay",
   "owner": { "name": "Naylonee" },
+  "description": "Save Claude usage on long Claude Code sessions.",
   "plugins": [
     {
       "name": "context-relay",
