@@ -1,12 +1,12 @@
-# context-relay
+# context-relay: save Claude usage on long sessions
 
-**Long Claude Code session? At 400k tokens, the work moves to a fresh session by itself, and the old conversation stays intact.**
+**When a Claude Code session reaches 400k tokens of context, the work moves to a new session by itself, to save your Claude usage. The old conversation stays intact.**
 
 [Français](README.fr.md)
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue) ![Dependencies: none](https://img.shields.io/badge/dependencies-none-brightgreen)
 
-Compaction summarizes your conversation in place, and the details are gone from the session. `context-relay` does something else: it hands off to a new session and leaves the old one untouched, so you can always go back to it.
+Every message in a session sends its whole context again, so a very long session uses up your Claude limits faster. Starting over by hand means re-explaining everything, and compaction summarizes the conversation in place, so details are gone from the session. `context-relay` hands off to a new session with a much smaller context and leaves the old one untouched, so you can always go back to it.
 
 ## Install
 

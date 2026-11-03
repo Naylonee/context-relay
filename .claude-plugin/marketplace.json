@@ -5,7 +5,7 @@
     {
       "name": "context-relay",
       "source": "./",
-      "description": "Never lose work to a full context: at 400k tokens (configurable), Claude Code writes a handoff and continues in a new session, while the old conversation stays intact."
+      "description": "Save Claude usage on long sessions: at 400k tokens of context (configurable), Claude Code moves the work to a new session and keeps the old one intact."
     }
   ]
 }

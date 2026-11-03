@@ -1,10 +1,10 @@
-# context-relay
+# context-relay : économise ton utilisation de Claude sur les longues sessions
 
-**Longue session Claude Code ? À 400k tokens, le travail passe tout seul dans une nouvelle session, et l'ancienne conversation reste intacte.**
+**Quand une session Claude Code atteint 400k tokens de contexte, le travail passe tout seul dans une nouvelle session, pour économiser ton utilisation de Claude. L'ancienne conversation reste intacte.**
 
 [English](README.md)
 
-Le compactage résume la conversation sur place, et les détails disparaissent de la session. `context-relay` fait autre chose : il passe le relais à une nouvelle session sans toucher à l'ancienne, à laquelle tu peux toujours revenir.
+Chaque message d'une session renvoie tout son contexte, donc une très longue session consomme plus vite tes limites Claude. Repartir de zéro à la main oblige à tout réexpliquer, et le compactage résume la conversation sur place, donc les détails disparaissent de la session. `context-relay` passe le relais à une nouvelle session au contexte bien plus léger, sans toucher à l'ancienne, à laquelle tu peux toujours revenir.
 
 ## Installation
 
