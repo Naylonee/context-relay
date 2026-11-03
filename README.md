@@ -39,10 +39,10 @@ context-relay active: 161216 / 400000 tokens (40%). Handoff pending: no.
 
 To turn the relay off in all sessions, type `/context-relay-off`. It stays off, even after a restart, until you type `/context-relay-on`.
 
-To change the limit, set `CONTEXT_RELAY_TOKENS` in the `env` section of `~/.claude/settings.json`:
+To change the limit, set `CONTEXT_RELAY_LIMIT` in the `env` section of `~/.claude/settings.json`:
 
 ```json
-{ "env": { "CONTEXT_RELAY_TOKENS": "200000" } }
+{ "env": { "CONTEXT_RELAY_LIMIT": "200000" } }
 ```
 
 A low value such as `50000` is also the quickest way to try a relay.

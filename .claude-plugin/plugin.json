@@ -1,6 +1,6 @@
 {
   "name": "context-relay",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "Save Claude usage on long sessions: at 400k tokens of context (configurable), Claude Code moves the work to a new session and keeps the old one intact.",
   "author": { "name": "Naylonee", "url": "https://github.com/Naylonee" },
   "homepage": "https://github.com/Naylonee/context-relay",

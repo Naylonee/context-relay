@@ -25,7 +25,7 @@ const msg = run('check', input);
 assert.match(msg, /401010 tokens/);
 assert.match(msg, /start_session/);
 assert.match(msg, /NEVER empty this session/);
-assert.strictEqual(run('check', input, { CONTEXT_RELAY_TOKENS: '500000' }), '');
+assert.strictEqual(run('check', input, { CONTEXT_RELAY_LIMIT: '500000' }), '');
 
 const hp = handoffPath(tr, 'old');
 fs.mkdirSync(path.dirname(hp), { recursive: true });
@@ -59,7 +59,7 @@ assert.strictEqual(redact('mot de passe : hunter22'), 'mot de passe : [redacted]
 assert.strictEqual(redact('https://user:hunter22@example.com/x'), 'https://user:[redacted]@example.com/x');
 // What must stay readable in a note.
 for (const ok of [
-  'Context at 409855 tokens (limit 400000)', 'max_tokens: 400000', 'CONTEXT_RELAY_TOKENS=50000',
+  'Context at 409855 tokens (limit 400000)', 'max_tokens: 400000', 'CONTEXT_RELAY_LIMIT=50000',
   'Old transcript: C:\\Users\\x\\.claude\\projects\\p\\abc.jsonl', 'git@github.com:user/repo.git',
   'the .env file holds API_KEY', 'https://example.com:8805/game', '`app.js` port 8805',
 ]) assert.strictEqual(redact(ok), ok);

@@ -6,7 +6,7 @@ const os = require('os');
 const path = require('path');
 const crypto = require('crypto');
 
-const LIMIT = Number(process.env.CONTEXT_RELAY_TOKENS) || 400000;
+const LIMIT = Number(process.env.CONTEXT_RELAY_LIMIT) || 400000;
 const DIR = path.join(os.homedir(), '.claude', 'context-relay');
 const TAIL_BYTES = 8 * 1024 * 1024;
 const OFF_FLAG = path.join(DIR, 'disabled'); // set by /context-relay-off, applies to every session
